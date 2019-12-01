@@ -1,0 +1,11 @@
+Strategy Pattern is behavioral pattern
+It's used to manage algorithms, relationships and responsibilities between objects
+
+where would i use this pattern?
+The Strategy pattern is to be used where you want to choose the algorithm to use at runtime.
+
+A good use of the Strategy pattern would be saving files in different formats,
+running various sorting algorithms, or file compression.
+
+The Strategy pattern provides a way to define a family of algorithms,
+encapsulate each one as an object, and make them interchangeable.
