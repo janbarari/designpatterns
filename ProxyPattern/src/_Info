@@ -1,0 +1,27 @@
+Proxy Pattern is structural pattern
+
+in simple proxy is filtering
+
+Proxy pattern is another simple but effective pattern that helps with controlling
+use and access of resources.
+
+A Proxy can also be defined as a surrogate. In the real work a cheque or credit card
+is a proxy for what is in our bank account.  It can be used in place of cash, which is
+what is needed, and provides a means of accessing that cash when required.
+And that's exactly what the Proxy pattern does.
+Controls and manage access to the object they are "protecting".
+
+Would I Use This Pattern?
+This pattern is recommended when either of the following scenarios occur in
+ your application:
+    -The object being represented is external to the system.
+    -Objects need to be created on demand.
+    -Access control for the original object is required
+    -Added functionality is required when an object is accessed.
+
+
+So How Does It Work In Java?
+A very simple real life scenario is our college internet,
+which restricts few site access. The proxy first checks the host you are
+connecting to, if it is not part of restricted site list, then it connects
+to the real internet. This example is based on Protection proxies.
