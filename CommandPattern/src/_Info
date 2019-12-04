@@ -1,0 +1,23 @@
+command.Command is a behavioural patterns which allows the requester of a particular action to be decoupled from the object
+that performs the action. Where the Chain of Responsibility pattern forwarded requests
+along a chain, the command.Command pattern forwards the request to a specific module.
+
+command.Command in the Real World
+One example of the command pattern being executed in the real world is the idea of
+a table order at a restaurant: the waiter takes the order, which is a command from
+the customer.This order is then queued for the kitchen staff.  The waiter tells the
+chef that the a new order has come in, and the chef has enough information to cook
+the meal.
+
+When Would I Use This Pattern?
+The command.Command Pattern is useful when:
+
+A history of requests is needed
+You need callback functionality
+Requests need to be handled at variant times or in variant orders
+The invoker should be decoupled from the object handling the invocation.
+
+So How Does It Work In Java?
+Let's use a remote control as the example. Our remote is the center of home
+automation and can control everything. We'll just use a light as an example, that
+we can switch on or off, but we could add many more commands.
