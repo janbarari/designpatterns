@@ -1,0 +1,45 @@
+The Visitor is known as a behavioural pattern,as it's used to manage algorithms,
+relationships and responsibilities between objects. The definition of Visitor provided
+in the original Gang of Four book on DesignPatterns states:
+Allows for one or more operation to be applied to a set of objects at runtime,
+decoupling the operations from the object structure.
+
+What the Visitor pattern actually does is create an external class that uses data in
+the other classes. If you need to perform operations across a dispate set of objects,
+Visitor might be the pattern for you. The GoF book says that the Visitor pattern can
+provide additional functionality to a class without changing it.
+
+
+Vistors in the Real World
+A real world analogy always helps with the understanding of a design pattern.
+One example I have seen for the Visitor pattern in action is a taxi example, where
+the customer calls orders a taxi, which arrives at his door. Once the person sits in,
+the visiting taxi is in control of the transport for that person.
+
+Shopping in the supermarket is another common example, where the shopping cart is
+your set of elements. When you get to the checkout, the cashier acts as a visitor,
+taking the disparate set of elements (your shopping), some with prices and others
+that need to be weighed, in order to provide you with a total.
+
+
+Where Would I Use This Pattern?
+The pattern should be used when you have distinct and unrelated operations to
+perform across a structure of objects. This avoids adding in code throughout your
+object structure that is better kept seperate, so it encourages cleaner code. You
+may want to run operations against a set of objects with different interfaces.
+Visitors are also valuable if you have to perform a number of unrelated operations
+across the classes.
+
+In summary, if you want to decouple some logical code from the elements that you're
+using as input, visitor is probably the best pattern for the job.
+
+
+Sample Code:
+here is a postage system. Our set of elements will be the items in our shopping
+cart. Postage will be determined using the type and the weight of each item, and
+of course depending on where the item is being shipped to.
+
+Let's create a seperate visitor for each postal region. This way, we can seperate
+the logic of calculating the total postage cost from the items themselves. This
+means that our individual elements don't need to know anything about the postal
+cost policy, and therefore, are nicely decoupled from that logic.
